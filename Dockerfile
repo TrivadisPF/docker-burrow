@@ -13,4 +13,4 @@ RUN rm burrow_linux_amd64.tar.gz
 RUN mkdir /etc/burrow
 RUN cp /burrow/config/burrow.toml /etc/burrow/burrow.toml
 
-CMD ["burrow", "--config-dir", "/etc/burrow"]
+CMD ["/burrow/burrow", "--config-dir", "/etc/burrow"]
